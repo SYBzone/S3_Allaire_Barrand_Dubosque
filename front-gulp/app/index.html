@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Laetitia Mutti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/mescss.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<header>
+    <div id="logo-container">
+        <img id="logo" src="images/logo-grand.png" alt="Logo">
+        <img id="titre" src="images/titre.png" alt="" class="stop-menu">
+    </div>
+    <div class="nav-toggle" onclick="document.documentElement.classList.toggle('menu-open')">
+        <div class="nav-toggle-bar"></div>
+    </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="her.html">Qui suis-je ?</a></li>
+            <li><a href="problèmes.html">Sophrologie</a></li>
+            <li><a href="solution.html">Hypnose arrêt du tabac</a></li>
+            <li><a href="nous-contacter.html">Yoga pour bébés</a></li>
+            <li><a href="nos-autres-projets.html">Citations</a></li>
+            <li><a href="nos-autres-projets.html">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+
+
+</header>
+<section id="menu-desktop-section">
+    <div id="menu-desktop-conteneur" class="stop-menu">
+        <ul class="menu-desktop">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">Qui suis-je ?</a></li>
+            <li><a href="sophrologie.html">Sophrologie</a></li>
+            <li><a href="hypnose.html">Hypnose arrêt du tabac</a></li>
+            <li><a href="Yoga-bebe.html">Yoga pour bébés</a></li>
+            <li><a href="citation.html">Citations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</section>
+
+<section>
+
+    <div id="fond">
+        <div id="h1-container">
+            <h1>Bienvenue</h1>
+            <div id="bienvenu-container">
+                <p>Dans mon cabinet de sophrologie</p>
+                <div>
+                    <a href="#"><img src="images/insta.png" alt=""></a>
+                    <a href="#"><img src="images/planning.png" alt=""></a>
+                    <a href="#"><img src="images/google.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <picture>
+        <source
+        srcset="images/logo-grand.png 851w,
+                images/logo-grand-1100px.png 1176w"
+        media="(min-width : 800px)"
+        >
+        <div id="logo-fond"></div>
+    </picture>
+
+</section>
+
+<main>
+    <div class="home-section">
+        <div class="h2-container">
+            <h2> Bienvenue</h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+    <div class="home-section">
+        <div class="h2-container">
+            <h2>Mes activités</h2>
+        </div>
+        <div id="activite-container">
+            <a href="#"><img src="images/picto-sophrologie.png" alt=""></a>
+            <a href="#"><img src="images/picto-cigarette.png" alt=""></a>
+            <a href="#"><img src="images/picto-bebe.png" alt=""></a>
+        </div>
+    </div>
+
+
+</main>
+<script> function myFunction(x) {
+    if (x.matches) { // If media query matches
+        document.getElementById('menu-desktop-conteneur').classList.remove("stop-menu")
+        document.getElementById('titre').classList.remove("stop-menu")
+    } else {
+        document.getElementById('menu-desktop-conteneur').classList.add("stop-menu")
+        document.getElementById('titre').classList.add("stop-menu")
+    }
+}
+
+var x = window.matchMedia("(min-width: 800px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+</script>
+</body>
+</html>
