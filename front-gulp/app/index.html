@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Laetitia Mutti</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="styles/mescss.css">
     <link rel="stylesheet" href="styles/menu.css">
     <script type="text/javascript" src="js/script.js"></script>
@@ -18,6 +19,7 @@
         <div class="nav-toggle-bar"></div>
     </div>
     <nav class="menu">
+        <img src="images/logo-grand.png" alt="">
         <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="her.html">Qui suis-je ?</a></li>
@@ -34,15 +36,26 @@
 </header>
 <section id="menu-desktop-section">
     <div id="menu-desktop-conteneur" class="stop-menu">
-        <ul class="menu-desktop">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="presentation.html">Qui suis-je ?</a></li>
-            <li><a href="sophrologie.html">Sophrologie</a></li>
-            <li><a href="hypnose.html">Hypnose arrêt du tabac</a></li>
-            <li><a href="Yoga-bebe.html">Yoga pour bébés</a></li>
-            <li><a href="citation.html">Citations</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="menu-desktop">
+            <a href="index.html">Accueil</a>
+            <a href="presentation.html">Qui suis-je ?</a>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="sophrologie.html">Sophrologie <img
+                        src="images/arrow-down-sign-to-navigate.png" alt=""></a></button>
+                <div class="dropdown-content">
+                    <a href="#">Pour qui ?</a>
+                    <a href="#">Pour quoi</a>
+                    <a href="#">Scéance individuelle</a>
+                    <a href="#">Scéance de groupes</a>
+                </div>
+            </div>
+
+
+            <a href="hypnose.html">Hypnose arrêt du tabac</a>
+            <a href="Yoga-bebe.html">Yoga pour bébés</a>
+            <a href="citation.html">Citations</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </div>
 </section>
 
@@ -54,25 +67,27 @@
             <div id="bienvenu-container">
                 <p>Dans mon cabinet de sophrologie</p>
                 <div>
-                    <a href="#"><img src="images/insta.png" alt=""></a>
-                    <a href="#"><img src="images/planning.png" alt=""></a>
-                    <a href="#"><img src="images/google.png" alt=""></a>
+                    <button>
+                        <a href="#">Prendre RDV </a>
+                    </button>
+                    <a href="#"><img src="images/icons/insta.png" alt=""></a>
+                    <a href="#"><img src="images/icons/google.png" alt=""></a>
                 </div>
             </div>
         </div>
     </div>
     <picture>
         <source
-        srcset="images/logo-grand.png 851w,
+                srcset="images/logo-grand.png 851w,
                 images/logo-grand-1100px.png 1176w"
-        media="(min-width : 800px)"
+                media="(min-width : 800px)"
         >
         <div id="logo-fond"></div>
     </picture>
 
 </section>
 
-<main>
+<main class="main-accueil">
     <div class="home-section">
         <div class="h2-container">
             <h2> Bienvenue</h2>
@@ -101,9 +116,37 @@
             <a href="#"><img src="images/picto-bebe.png" alt=""></a>
         </div>
     </div>
-
-
 </main>
+
+<footer>
+    <div id="footer-big-container">
+        <div class="footer-container">
+            <a href=""><img src="images/icons/insta-bleu.png" width="75px" alt=""></a>
+            <a href=""><img src="images/icons/google-bleu.png" width="75px" alt=""></a>
+            <a href=""><img src="images/icons/linkedin-bleu.png" width="75px" alt=""></a>
+            <button>
+                <a id="footer-rdv" href="#">Prendre RDV </a>
+            </button>
+
+        </div>
+        <div class="footer-container">
+            <a href="index.html">Accueil</a>
+            <a href="presentation.html">Qui suis-je ?</a>
+            <a href="sophrologie.html">Sophrologie</a>
+            <a href="hypnose.html">Hypnose arrêt du tabac</a>
+            <a href="Yoga-bebe.html">Yoga pour bébés</a>
+            <a href="citation.html">Citations</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-container">
+            <a href=""><img src="images/icons/maps-and-flags.png" width="50px" alt=""></a>
+            <a href="mentions légales.html">Mentions Légales</a>
+            <a href="rgpd.html">Politique de confidentialité</a>
+            <a href=""><img src="images/icons/appel.png" width="50px" alt=""></a>
+        </div>
+    </div>
+
+</footer>
 <script> function myFunction(x) {
     if (x.matches) { // If media query matches
         document.getElementById('menu-desktop-conteneur').classList.remove("stop-menu")
